@@ -2,27 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple Weather App</title>
+  <title>World Weather Checker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="container">
-    <h1>Weather Checker 🌦️</h1>
+    <h1>🌍 World Weather Checker</h1>
 
-    <select id="citySelect">
-      <option value="London">London</option>
-      <option value="New York">New York</option>
-      <option value="Tokyo">Tokyo</option>
-      <option value="Mumbai">Mumbai</option>
-      <option value="Paris">Paris</option>
-      <option value="Tirupati">Tirupati</option>
-      <option value="bangalore">bangalore</option>
-    </select>
+    <div class="main-content">
 
-    <button onclick="getWeather()">OK</button>
+      <div class="left-side">
+        <input type="text" id="cityInput" placeholder="Type city name...">
+        <div id="suggestions"></div>
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
 
-    <textarea id="weatherBox" readonly></textarea>
+      <textarea id="weatherBox" readonly></textarea>
+
+    </div>
+
   </div>
 
   <script src="script.js"></script>

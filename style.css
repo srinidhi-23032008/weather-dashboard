@@ -2,10 +2,10 @@ body {
   background: linear-gradient(to right, #74ebd5, #acb6e5);
   font-family: Arial, sans-serif;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
-.container {}
+.container {
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -13,15 +13,68 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-select, button, textarea {
-  margin: 10px;
+h1 {
+  margin-bottom: 30px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+input {
   padding: 10px;
   border-radius: 8px;
   font-size: 16px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+#suggestions {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  width: 250px;
+  text-align: left;
+  z-index: 1000;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+#suggestions div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background: #e0e0e0;
+}
+
+button {
+  margin-top: 120px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 textarea {
   width: 300px;
   height: 150px;
   resize: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
 }
